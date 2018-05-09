@@ -145,7 +145,6 @@ public class CustomKeyboard  extends InputMethodService implements TabLayout.OnT
 
     @Override
     public View onCreateInputView() {
-
         final LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
 

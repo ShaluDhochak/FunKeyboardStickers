@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         final AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialogBuilder.setMessage("Do you want to Enable Apnaji Keyboard ?");
+        alertDialogBuilder.setMessage("Do you want to Enable FunStickers Keyboard ?");
         alertDialogBuilder.setPositiveButton("Enable", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
