@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lms.autovista.com.customkeyboard.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/veticalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+            <LinearLayout
+                android:id="@+id/innerVertical1_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image1_iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/enough_dont_talk_to_me_now"
+                />
+
+            <TextView
+                android:id="@+id/image1Detail_txtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enough!!"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffc57619"
+                />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/innerVertical2_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image2_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/d5_jhakaas_yaar"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/image2Detail_txtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jhakaas Yaar"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="2"
+            >
+            <LinearLayout
+                android:id="@+id/innerVertical11_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image11_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/a00_kya_yaar"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/image1Detail1_txtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kya Yaar"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/innerVertical22_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image22_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/a09_daal_me_kuch_kaala_hai"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/image22Detail_txtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daal me Kuch Kaala Hai"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+            <LinearLayout
+                android:id="@+id/innerVertical13_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image13_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/d18_hard_hai_tu_bhai"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/image13Detail_txtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hard Hai Tu Bhai"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/innerVertical23_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image23_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/d2_tu_mera_langotiyaar"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/image23Detail_txtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tu Mera Langotiyaar"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:id="@+id/innerVertical14_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image14_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/d1_apni_yaari"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/image14Detail_txtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apni Yaari"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/innerVertical24_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image24_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/d3_first_class_yaar"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/image24Detail_txtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Class Yaar"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
