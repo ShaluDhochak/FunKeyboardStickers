@@ -1,4 +1,4 @@
-package lms.autovista.com.customkeyboard;
+package com.keyboard.funstickers;
 
 /*
   Created by Shalu Dhochak on 5/8/2018.

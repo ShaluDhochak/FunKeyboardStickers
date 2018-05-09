@@ -1,4 +1,4 @@
-package lms.autovista.com.customkeyboard;
+package com.keyboard.funstickers;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -14,6 +14,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         alertDialogBuilder.show();
 
-        Intent intent=new Intent(MainActivity.this,CustomKeyboard.class);
+        Intent intent=new Intent(MainActivity.this, CustomKeyboard.class);
         startService(intent);
 }
 

@@ -1,4 +1,4 @@
-package lms.autovista.com.customkeyboard;
+package com.keyboard.funstickers;
 
 import android.content.ContentValues;
 import android.content.Context;
