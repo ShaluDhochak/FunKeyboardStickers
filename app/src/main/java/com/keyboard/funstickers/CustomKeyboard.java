@@ -1,7 +1,7 @@
 package com.keyboard.funstickers;
 
 /*
-  Created by Shalu Dhochak on 5/8/2018.
+ Created by Shalu Dhochak on 5/8/2018.
 */
 
 import android.app.AppOpsManager;

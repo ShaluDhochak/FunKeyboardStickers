@@ -7,11 +7,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-/**
- * Created by Shalu Dhochak on 5/8/2018.
- */
+/*
+  Created by Shalu Dhochak on 5/8/2018.
+*/
 
-public class DatabaseHelper  extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "Stickers_DB";
     public static final String TABLE_NAME = "Stickers";
@@ -24,7 +24,6 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
     public static final String STICKER_NAME = "sticker_name";
     public static final String STICKER_PUBLISH_TAGS = "sticker_publish_tags";
     public static final String STICKER_USER_TAGS = "sticker_user_tags";
-
 
     private static final int DB_VERSION = 1;
 
@@ -48,20 +47,17 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
                 + "(" + ID +
                 " INTEGER PRIMARY KEY AUTOINCREMENT, " + STICKER_ID + " VARCHAR, " + STICKER_NAME +
                 " VARCHAR);";
-
         db.execSQL(sql);
 
         sql = "CREATE TABLE " + TABLE_NAME_2
                 + "(" + STICKER_ID + " VARCHAR, " + STICKER_PUBLISH_TAGS + " VARCHAR, "+STICKER_USER_TAGS+ " VARCHAR);";
         db.execSQL(sql);
 
-
         sql = "CREATE TABLE " + TABLE_NAME
                 + "(" + ID +
                 " INTEGER PRIMARY KEY AUTOINCREMENT, " + STICKER_ID + " VARCHAR, " + STICKER_NAME +
                 " VARCHAR, " + STICKER_PUBLISH_TAGS + " VARCHAR, "+STICKER_USER_TAGS+ " VARCHAR);";
         db.execSQL(sql);
-
     }
 
     @Override
@@ -83,6 +79,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
         db.close();
         return true;
     }
+
     public Cursor getTableInfo()
     {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -92,6 +89,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
         Log.v("Cursor count", "" + c.getCount());
         return c;
     }
+
     public Cursor getSticker(String tag)
     {
         tag = tag.toUpperCase();
@@ -102,6 +100,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
         Log.v("Cursor count", "" + c.getCount());
         return c;
     }
+
     public void inserttTag(String userTag,String publishTag,String stickerName)
     {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -112,4 +111,5 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
         int update =  db.update(TABLE_NAME, contentValues, whereCause, new String[]{publishTag,stickerName});
         System.out.println("PAGER updateQuery: "+ update);
     }
+
 }

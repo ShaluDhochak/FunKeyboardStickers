@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import java.util.List;
 
-
 public class MainActivity extends AppCompatActivity {
 
     public static DatabaseHelper databaseHelper;
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         final AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialogBuilder.setMessage("Do you want to Enable FunStickers Keyboard ?");
+        alertDialogBuilder.setMessage("Do you want to Enable Fancy Keyboard ?");
         alertDialogBuilder.setPositiveButton("Enable", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent=new Intent(MainActivity.this, CustomKeyboard.class);
         startService(intent);
-}
+    }
 
     private void getDatabaseTable() {
         databaseHelper = new DatabaseHelper(getApplicationContext());
@@ -90,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
 
         // aby yaar
         databaseHelper.addSticker("R.drawable.a00_kya_yaar", "Kya Yaar", "Friends","Friends");
-        databaseHelper.addSticker("R.drawable.a00_kya_yaar", "Kya Yaar", "JKJsd","");
-        databaseHelper.addSticker("R.drawable.a00_kya_yaar", "Kya Yaar", "fsdfsdf","");
+        databaseHelper.addSticker("R.drawable.a00_kya_yaar", "Kya Yaar", "JKJsd","YAAR");
+        databaseHelper.addSticker("R.drawable.a00_kya_yaar", "Kya Yaar", "fsdfsdf","YAAR");
 
         databaseHelper.addSticker("R.drawable.a01_chal_nikal","Chal Nikal", "RAVI","GANDU");
         databaseHelper.addSticker("R.drawable.a02_gayi_bhains", "Gayi Bhains", "RAVI","GANDU");
@@ -129,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
         databaseHelper.addSticker("R.drawable.d13_abe_chindi","Abe Chindi","","LOVE");
         databaseHelper.addSticker("R.drawable.d14_aaja_cutting_aur_sutta","Aaja Cutting aur Sutta","","LOVE");
         databaseHelper.addSticker("R.drawable.d15_kantala_aa_raha_hai","Kantala aa raha hai","","");
-        databaseHelper.addSticker("R.drawable.d16_bas_kya","Bas Kya","","");
-        databaseHelper.addSticker("R.drawable.d17_kya_re_bunty","Kya re Bunty","","");
+        databaseHelper.addSticker("R.drawable.d16_bas_kya","Bas Kya","","KYA");
+        databaseHelper.addSticker("R.drawable.d17_kya_re_bunty","Kya re Bunty","","BUNTY");
         databaseHelper.addSticker("R.drawable.d18_hard_hai_tu_bhai","Hard hai tu bhai","","MAST");
         databaseHelper.addSticker("R.drawable.d19_dimag_mat_chaat","Dimag mat chaat","","DOST");
         databaseHelper.addSticker("R.drawable.d20_ekk_jhapat_du_kya","Ekk jhapat du kya","","DOST");
@@ -157,12 +156,10 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println("ID: " + inputMethodInfo.getId());
                     System.out.println("Acti: " + inputMethodInfo.getSettingsActivity());
 
-                }else{
-                    found = false;
                 }
             }
             if (!found) {
-                Toast.makeText(MainActivity.this, "Please choose Apnaji Keyboard", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Please choose FunStickers Keyboard", Toast.LENGTH_LONG).show();
             }
         }
     }
