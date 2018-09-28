@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 Intent i = new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS);
                 MainActivity.this.startActivityForResult(i,1001);
+
+                //FROM HERE WE ENTERED INTO SETTING
+
             }
         });
 
@@ -63,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         startService(intent);
     }
 
-    private void getDatabaseTable() {
+    private void getDatabaseTable(){
         databaseHelper = new DatabaseHelper(getApplicationContext());
         Cursor c = databaseHelper.getTableInfo();
         String[] items = new String[c.getCount()];

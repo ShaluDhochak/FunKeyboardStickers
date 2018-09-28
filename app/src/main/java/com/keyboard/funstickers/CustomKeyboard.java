@@ -470,7 +470,6 @@ public class CustomKeyboard  extends InputMethodService implements TabLayout.OnT
                     currentInputConnection.commitText("9", 0);
                 //currentInputConnection.commitText("\ud83d\ude01", 0);
                 break;
-
             case R.id.btn_q:
                 if (isCommitContentSupported(getCurrentInputEditorInfo())) {
                     if (btn_num_switch.getTag().equals("alphabetical")) {
@@ -562,7 +561,6 @@ public class CustomKeyboard  extends InputMethodService implements TabLayout.OnT
                 }
                 break;
             case R.id.btn_u:
-
                 if (btn_num_switch.getTag().equals("alphabetical")) {
 
                     if (btn_caps.getTag().equals("uppercase")) {
@@ -578,7 +576,6 @@ public class CustomKeyboard  extends InputMethodService implements TabLayout.OnT
             case R.id.btn_i:
 
                 if (btn_num_switch.getTag().equals("alphabetical")) {
-
                     if (btn_caps.getTag().equals("uppercase")) {
                         currentInputConnection.commitText("I", 0);
                         setCaps(false);
@@ -851,61 +848,53 @@ public class CustomKeyboard  extends InputMethodService implements TabLayout.OnT
                 break;
 
             case R.id.btn_atRate:
-
                 currentInputConnection.commitText("@", 0);
-
                 break;
 
             case R.id.btn_hash:
                 currentInputConnection.commitText("#", 0);
-
                 break;
 
             case R.id.btn_dollar:
                 currentInputConnection.commitText("$", 0);
-
                 break;
 
             case R.id.btn_divide:
                 currentInputConnection.commitText("/", 0);
-
                 break;
 
             case R.id.btn_carrat:
                 currentInputConnection.commitText("^", 0);
-
                 break;
 
             case R.id.btn_ampersand:
                 currentInputConnection.commitText("&", 0);
-
                 break;
 
             case R.id.btn_mult:
                 currentInputConnection.commitText("*", 0);
-
                 break;
 
             case R.id.btn_openBrac:
                 currentInputConnection.commitText("(", 0);
-
                 break;
 
             case R.id.btn_closingBrac:
                 currentInputConnection.commitText(")", 0);
-
                 break;
 
             case R.id.btn_enter:
                 currentInputConnection.commitText("\n", 0);
                 break;
+
             case R.id.btn_questionMark:
                 currentInputConnection.commitText("?", 0);
                 break;
-            case R.id.btn_spacebar:
 
+            case R.id.btn_spacebar:
                 currentInputConnection.commitText(" ", 0);
                 break;
+
             case R.id.btn_go:
 
                 break;
@@ -1002,7 +991,6 @@ public class CustomKeyboard  extends InputMethodService implements TabLayout.OnT
         }
         charSequence = getCurrentInputConnection().getTextBeforeCursor(15, 0);
         System.out.println("PAGER charS: " + charSequence);
-
 
         if (charSequence != null && !containsDigit(charSequence + "") && !containsSpecialCharacter(charSequence+""))
             showStickerInfoFromDatabase(charSequence);
@@ -1129,7 +1117,6 @@ public class CustomKeyboard  extends InputMethodService implements TabLayout.OnT
             databaseHelper.close();
 
             System.out.println("PAGER ITEMS: " + items.length);
-
 
             if (items.length > 0) {
                 mHorizontalScrollView.setVisibility(View.VISIBLE);
